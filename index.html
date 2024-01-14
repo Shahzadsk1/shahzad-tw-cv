@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://avatars.githubusercontent.com/u/155583759?v=4"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -12,52 +16,89 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="index.css" />
-    <title>Tailwind Base Setup</title>
+    <title>Shahzad CV</title>
   </head>
-  <body class="font-mono bg-[#434d63]">
-    <header>
-      <nav class="bg-[#242934] m-0 p-4 px-8">
-        <div class="flex justify-between text-4xl">
-          <span class="text-white">Shahzad</span>
-          <span class="text-white">
+  <body class="bg-[#2A303C] text-gray-300 text-xl">
+    <div class="container mx-auto">
+      <nav class="bg-[#242933] m-0 p-4 px-8">
+        <div class="flex justify-between text-3xl">
+          <span>Shahzad</span>
+          <span>
             <i class="fa-solid fa-file-pdf"></i>
             <i class="fa-solid fa-file-pdf"></i>
           </span>
         </div>
       </nav>
-      <div class="px-64 my-4 grid grid-cols-10 grid-flow-col text-justify">
-        <aside class="bg-yellow-200 col-start-1 col-span-3 rounded-l-lg p-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facere
-          consequatur eius dolore quos impedit, exercitationem numquam! Cumque
-          voluptatem, non minus nesciunt eum odio qui repellat eos minima esse
-          maxime repellendus inventore dolorum ratione expedita consequuntur
+
+      <div class="grid grid-flow-col grid-cols-10 my-4 text-justify">
+        <aside class="bg-[#1F242D] col-start-1 col-span-3 rounded-l-lg p-6">
+          <div
+            class="flex flex-col items-center justify-center w-full h-48 gap-4 p-2 bg-[#2A303C] rounded-xl"
+          >
+            <div>
+              <img
+                src="https://avatars.githubusercontent.com/u/155583759?v=4"
+                class="w-24 h-24 rounded-full"
+                alt=""
+              />
+            </div>
+            <div class="flex gap-2">
+              <span class="px-2 py-1 text-sm bg-[#242933] rounded-xl">UI</span>
+              <span class="px-2 py-1 text-sm bg-[#242933] rounded-xl"
+                >Frontend</span
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 mt-4">
+            <div
+              class="p-4 h-16 bg-[#242933] rounded-md border-l-8 border-indigo-800"
+            >
+              About
+            </div>
+            <div class="p-4 h-16 bg-[#1F242D] rounded-md">Experience</div>
+            <div class="p-4 h-16 bg-[#1F242D] rounded-md">Skills</div>
+            <div class="p-4 h-16 bg-[#1F242D] rounded-md">Projects</div>
+            <div class="p-4 h-16 bg-[#1F242D] rounded-md">Testimonials</div>
+          </div>
         </aside>
-        <main class="bg-red-200 col-start-4 col-span-7 rounded-r-lg p-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti
-          molestias quos, minima magnam rem modi dolorem. Provident, similique?
-          Et, cupiditate quam quaerat quis pariatur vel dicta asperiores qui
-          itaque repudiandae velit, maxime nisi tempora. Ex quos nam facilis
-          ducimus exercitationem nemo aliquam quas omnis autem? Voluptate eius,
-          suscipit fuga id nobis atque doloremque consequatur natus aut,
-          incidunt libero unde impedit asperiores! Quis temporibus, molestias
-          perspiciatis numquam cumque consequatur, magnam accusantium optio
-          repudiandae quia enim quisquam. Facere ea ad dignissimos dolores,
-          blanditiis, quo nemo id animi quis, aperiam sequi? Accusantium
-          perspiciatis sunt sit dolor delectus, libero eaque quidem tempore
-          earum ex eius! Nihil delectus molestias dicta facilis quasi! Quod,
-          praesentium. Quae, temporibus quia alias at animi sunt. Accusamus
-          consectetur magni id architecto quo ducimus quae suscipit vitae
-          corporis totam eos minima numquam adipisci temporibus, aliquam quos,
-          ex, tempora odio mollitia! Dolorum, hic nesciunt aut sit eligendi
-          soluta expedita accusantium enim rerum, voluptatum ad voluptas quia
-          cupiditate ratione eos molestias adipisci quos deleniti qui facilis
-          aliquam quidem eum quas? Nisi praesentium optio beatae sapiente, ipsam
-          dolorum! Quaerat qui, vitae id, non nam obcaecati ipsum at corrupti
-          sed deleniti suscipit. Velit, incidunt optio! Quos enim distinctio
-          minus maxime dignissimos porro minima nesciunt.
+        <main class="bg-[#242933] col-start-4 col-span-7 rounded-r-lg p-6 pt-0">
+          <div class="flex flex-col">
+            <div>
+              <img
+                class="object-cover w-full h-64 bg-top"
+                src="https://faran-cv.vercel.app/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Ffaran-cv.appspot.com%2Fo%2FCV-cover-min.png%3Falt%3Dmedia%26token%3D014f9e64-eacc-4144-a4e3-9385273cfec0&w=1920&q=75"
+              />
+              <img
+                class="border-indigo-800 border-8 -mt-24 rounded-full shadow-2xl ml-[50%] translate-x-[-50%] size-48"
+                src="https://avatars.githubusercontent.com/u/155583759?v=4"
+              />
+              <div>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+            <div class="flex justify-center py-8 text-4xl font-extrabold">
+              <span>Shahzad Shaikh</span>
+            </div>
+            <div class="p-4 mt-12 rounded-xl bg-zinc-600">desc</div>
+            <div class="w-full h-32 p-4 mt-12 bg-gray-500 rounded-xl">
+              <div class="flex">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
-    </header>
+    </div>
   </body>
 </html>
