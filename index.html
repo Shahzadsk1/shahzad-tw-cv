@@ -26,11 +26,18 @@
     <link rel="stylesheet" href="index.css" />
     <title>Shahzad CV</title>
   </head>
-  <body class="bg-[#2A303C] text-gray-300 text-xl">
+  <body class="bg-[#2A303C] text-gray-300">
     <div class="container mx-auto">
       <nav class="bg-[#242933] m-0 p-4 px-8">
-        <div class="flex justify-between text-3xl">
-          <span>Shahzad CV</span>
+        <div
+          class="flex md:justify-between sm:justify-around md:text-3xl sm:text-sm"
+        >
+          <button id="showMenu">
+            <i class="fa-solid fa-bars-staggered sm:block md:hidden"></i>
+          </button>
+          <span class="md:justify-start md:absolute md:left-10"
+            >Shahzad CV</span
+          >
           <span>
             <i class="fa-solid fa-file-pdf"></i>
             <i class="fa-solid fa-palette"></i>
@@ -39,7 +46,9 @@
       </nav>
 
       <div class="grid grid-flow-col grid-cols-10 my-4 text-justify">
-        <aside class="bg-[#1F242D] col-start-1 col-span-3 rounded-l-lg p-6">
+        <aside
+          class="sm:hidden md:block bg-[#1F242D] md:col-start-1 md:col-span-3 md:rounded-l-lg md:p-6"
+        >
           <div
             class="flex flex-col items-center justify-center w-full h-48 gap-4 p-2 bg-[#2A303C] rounded-xl"
           >
@@ -85,25 +94,31 @@
             </div>
           </div>
         </aside>
-        <main class="bg-[#242933] col-start-4 col-span-7 rounded-r-lg p-6 pt-0">
+        <main
+          class="bg-[#242933] md:col-start-4 sm:col-start-1 sm:col-span-10 md:col-span-7 rounded-r-lg p-6 pt-0"
+        >
           <div class="flex flex-col">
             <div>
               <img
-                class="object-cover w-full h-64 bg-top"
+                class="bg-top md:w-full md:h-64 md:object-cover sm:w-full sm:h-28 sm:object-fill"
                 src="https://faran-cv.vercel.app/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Ffaran-cv.appspot.com%2Fo%2FCV-cover-min.png%3Falt%3Dmedia%26token%3D014f9e64-eacc-4144-a4e3-9385273cfec0&w=1920&q=75"
               />
 
               <img
-                class="border-indigo-800 border-8 -mt-24 rounded-full shadow-2xl ml-[50%] translate-x-[-50%] size-48"
+                class="md:border-indigo-800 md:border-8 md:-mt-24 md:rounded-full sm:border-indigo-800 sm:border-4 sm:-mt-16 sm:rounded-full md:shadow-2xl md:ml-[50%] sm:shadow-2xl sm:ml-[50%] md:translate-x-[-50%] sm:translate-x-[-50%] md:size-48 sm:size-28"
                 src="https://avatars.githubusercontent.com/u/155583759?v=4"
               />
               <div class="flex justify-between">
-                <span class="flex gap-6 px-6 -mt-20 text-4xl opacity-60">
+                <span
+                  class="flex md:gap-6 sm:gap-3 md:px-6 sm:px-3 md:-mt-20 sm:-mt-10 md:text-4xl sm:text-xl opacity-60"
+                >
                   <i class="fa-brands fa-github"></i
                   ><i class="text-blue-700 fa-brands fa-linkedin"></i
                   ><i class="text-[#0F8FF2] fa-brands fa-facebook"></i
                 ></span>
-                <span class="flex gap-6 px-6 -mt-20 text-4xl opacity-60">
+                <span
+                  class="flex md:gap-6 sm:gap-3 md:px-6 sm:px-3 md:-mt-20 sm:-mt-10 md:text-4xl sm:text-xl opacity-60"
+                >
                   <i class="text-red-600 fa-brands fa-youtube"></i
                   ><i class="text-[#5562EA] fa-brands fa-discord"></i
                   ><i class="fa-brands fa-twitter text-[#1DA1F2]"></i>
@@ -111,7 +126,7 @@
               </div>
             </div>
             <div
-              class="flex justify-center py-8 text-4xl font-extrabold text-gray-300"
+              class="flex justify-center text-gray-300 md:py-8 sm:py-4 md:text-4xl sm:text-2xl sm:font-bold md:font-extrabold"
             >
               <span>Shahzad Shaikh</span>
             </div>
@@ -136,18 +151,26 @@
               <div class="flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
                 <div class="text-[#646A75] mt-2 text-sm">
                   Phone
-                  <div class="text-[#A3AAB7] flex justify-between mt-2 text-xl">
+                  <div
+                    class="text-[#A3AAB7] flex justify-between mt-2 md:text-xl sm:text-xs"
+                  >
                     +91 7678 089 617
-                    <i class="mr-4 -mt-4 text-3xl fa-solid fa-phone-volume"></i>
+                    <i
+                      class="mr-4 -mt-4 md:text-3xl sm:text-xl fa-solid fa-phone-volume"
+                    ></i>
                   </div>
                 </div>
               </div>
               <div class="flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
                 <div class="text-[#646A75] mt-2 text-sm">
                   Email
-                  <div class="text-[#A3AAB7] flex justify-between mt-2 text-xl">
-                    shahzad.shaikh2762@gmail.com
-                    <i class="mr-4 -mt-4 text-3xl fa-solid fa-envelope"></i>
+                  <div
+                    class="text-[#A3AAB7] flex justify-between mt-2 md:text-xl sm:text-xs"
+                  >
+                    shahzad.shaikh<br />2762@gmail.com
+                    <i
+                      class="mr-4 -mt-4 md:text-3xl sm:text-xl fa-solid fa-envelope"
+                    ></i>
                   </div>
                 </div>
               </div>
@@ -155,10 +178,12 @@
               <div class="flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
                 <div class="text-[#646A75] mt-2 text-sm">
                   Date of Birth
-                  <div class="text-[#A3AAB7] flex justify-between mt-2 text-xl">
+                  <div
+                    class="text-[#A3AAB7] flex justify-between mt-2 md:text-xl sm:text-base"
+                  >
                     Oct 01
                     <i
-                      class="mr-4 -mt-4 text-3xl fa-solid fa-calendar-days"
+                      class="mr-4 -mt-4 md:text-3xl sm:text-xl fa-solid fa-calendar-days"
                     ></i>
                   </div>
                 </div>
@@ -166,9 +191,13 @@
               <div class="flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
                 <div class="text-[#646A75] mt-2 text-sm">
                   Current City
-                  <div class="text-[#A3AAB7] flex justify-between mt-2 text-xl">
+                  <div
+                    class="text-[#A3AAB7] flex justify-between mt-2 md:text-xl sm:text-base"
+                  >
                     Mumbai, IN
-                    <i class="mr-4 -mt-4 text-3xl fa-solid fa-location-dot"></i>
+                    <i
+                      class="mr-4 -mt-4 md:text-3xl sm:text-xl fa-solid fa-location-dot"
+                    ></i>
                   </div>
                 </div>
               </div>
