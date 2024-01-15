@@ -29,15 +29,11 @@
   <body class="bg-[#2A303C] text-gray-300">
     <div class="container mx-auto">
       <nav class="bg-[#242933] m-0 p-4 px-8">
-        <div
-          class="flex md:justify-between sm:justify-around md:text-3xl sm:text-sm"
-        >
-          <button id="showMenu">
-            <i class="fa-solid fa-bars-staggered sm:block md:hidden"></i>
+        <div class="flex justify-between md:text-3xl sm:text-sm">
+          <button id="showMenu" class="sm:block md:hidden">
+            <i class="fa-solid fa-bars-staggered"></i>
           </button>
-          <span class="md:justify-start md:absolute md:left-10"
-            >Shahzad CV</span
-          >
+          <span>Shahzad CV</span>
           <span>
             <i class="fa-solid fa-file-pdf"></i>
             <i class="fa-solid fa-palette"></i>
@@ -47,7 +43,7 @@
 
       <div class="grid grid-flow-col grid-cols-10 my-4 text-justify">
         <aside
-          class="sm:hidden md:block bg-[#1F242D] md:col-start-1 md:col-span-3 md:rounded-l-lg md:p-6"
+          class="sm:hidden md:block bg-[#1F242D] md:col-start-2 md:col-span-2 md:rounded-l-lg md:p-6"
         >
           <div
             class="flex flex-col items-center justify-center w-full h-48 gap-4 p-2 bg-[#2A303C] rounded-xl"
@@ -95,7 +91,7 @@
           </div>
         </aside>
         <main
-          class="bg-[#242933] md:col-start-4 sm:col-start-1 sm:col-span-10 md:col-span-7 rounded-r-lg p-6 pt-0"
+          class="bg-[#242933] md:col-start-4 sm:col-start-1 sm:col-span-10 md:col-span-6 rounded-r-lg p-6 pt-0"
         >
           <div class="flex flex-col">
             <div>
@@ -145,10 +141,10 @@
               </p>
             </div>
             <div
-              class="w-full h-64 p-4 mt-2 bg-[#242933] rounded-xl grid grid-flow-col grid-cols-2 grid-rows-2 gap-4"
+              class="w-full h-48 md:h-64 mt-6 bg-[#242933] rounded-xl grid grid-flow-col grid-cols-2 grid-rows-2 gap-4"
             >
               <!---This 1-->
-              <div class="flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
+              <div class="flex-1 px-4 p-2 bg-[#1F242D] rounded-xl items-center">
                 <div class="text-[#646A75] mt-2 text-sm">
                   Phone
                   <div
@@ -161,7 +157,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
+              <div class="px-4 flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
                 <div class="text-[#646A75] mt-2 text-sm">
                   Email
                   <div
@@ -175,7 +171,7 @@
                 </div>
               </div>
               <!---This-->
-              <div class="flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
+              <div class="px-4 flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
                 <div class="text-[#646A75] mt-2 text-sm">
                   Date of Birth
                   <div
@@ -188,7 +184,7 @@
                   </div>
                 </div>
               </div>
-              <div class="flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
+              <div class="px-4 flex-1 p-2 bg-[#1F242D] rounded-xl items-center">
                 <div class="text-[#646A75] mt-2 text-sm">
                   Current City
                   <div

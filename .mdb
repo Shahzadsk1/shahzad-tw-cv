@@ -1,8 +1,8 @@
 {
-  "projectName": "cv",
+  "projectName": "cv-preview",
   "meta": {
     "type": "frontend"
   },
   "packageManager": "npm",
-  "hash": "48a8103b"
+  "hash": "faa649cc"
 }
